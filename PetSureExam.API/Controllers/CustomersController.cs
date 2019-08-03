@@ -25,8 +25,8 @@ namespace PetSureExam.API.Controllers
         /// </summary>
         /// <returns>list of customer and its address list</returns>
         [HttpGet]
-        [Route("api/Customers/Index")]
-        public IList<CustomerViewModel> Index()
+        [Route("api/Customers/GetCustomersList")]
+        public IList<CustomerViewModel> GetCustomersList()
         {
             var data = _customerService.GetCustomersList();
             return data;
